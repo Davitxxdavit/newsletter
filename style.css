@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(54,56,77,255);
+    font-family: "Roboto", sans-serif;
+}
+
+
+.background{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    width: 800px;
+    border-radius: 20px;
+}
+
+h1{
+    font-size: 3.5rem;
+}
+
+p{
+    margin: 20px 0;
+}
+
+li{
+    margin: 10px 0;
+    list-style-image: url("./assets/images/icon-list.svg");
+}
+ul{
+    margin-left: 30px;
+}
+label {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.wrapper2{
+    display: none;
+    flex-flow: column;
+    justify-content: flex-start;
+  
+    background-color: #fff;
+    padding: 50px;
+    width: 400px;
+    border-radius: 20px;
+}
+.wrapper2 img{
+    width: 55px;
+    height: 55px;
+}
+
+.wrapper2 h1{
+    color: rgba(32,35,65,255);
+}
+.content{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 370px;
+    /* overflow: hidden; */
+    margin-right: 20px;
+}
+
+
+.attribution{
+    position: absolute;
+    top: 90vh;
+}
+
+.form{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+}
+.eror{
+  position: absolute;
+  top: 20px;
+    right: 5px;
+}
+
+
+input{
+    margin: 10px 0;
+    padding: 15px ;
+    width: 91%;
+    border-radius: 10px;
+    border: 1px solid gray;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+button{
+    font-weight: 600;
+    background-color: rgba(35,39,66,255);
+    color: #fff;
+    padding: 15px 0;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    margin: 15px 0;
+    cursor: pointer;
+    transition-duration: 1ms;
+}
+
+button:hover{
+    background-image: linear-gradient(rgba(255,84,118,255), rgba(255,93,96,255), rgba(255,105,62,255));
+
+}
+
+
+
+
+@media only screen and (max-width: 860px) {
+   
+    .wrapper1{
+        width: 650px;
+    }
+  }
+
+
+  @media only screen and (max-width: 680px) {
+   
+    .wrapper1{
+        width: 550px;
+        padding-right: 0;
+    }
+
+    .wrapper1 img{
+        width: 300px;
+    }
+  }
+
+  
+@media only screen and (max-width: 540px) {
+    body{
+        background-color: #fff;
+    }
+    .wrapper1{
+      
+        display: flex;
+        flex-flow: column;
+    }
+
+    .wrapper1 img{
+        position: absolute;
+        top: -50vh;
+        left: 0;
+        width: 100%;
+    
+    }
+
+    .content{
+        position: absolute;
+        top: 40vh;
+    }
+
+    .attribution{
+        display: none;
+    }
+  }
